@@ -1,0 +1,90 @@
+.container {
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/*containerでwidth指定するとauto-fillがきかない*/
+
+.first {
+	background: aqua;
+	border-radius: 30%;
+	margin-right: 5px;
+}
+
+.box1 {
+	border: 1px solid gray;
+}
+
+.fubukigata {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(5, 109px);
+	grid-template-rows: 150px 20px 150px 20px;
+	justify-content: center;
+}
+
+
+/*
+.fubukigata {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(5, 109px);
+	grid-template-rows: 150px 20px 150px 20px;
+	justify-content: center;
+}
+*/
+
+
+/*	grid-template: repeat(5, 100px)/repeat(auto-fill, 100px);*/
+
+
+/*	grid-template-rows: repeat(2, 100px);*/
+
+
+/*
+.ayanamigata {
+	display: grid;
+	grid-template-columns: repeat(5, 100px);
+	grid-template-rows: 100px 20px 100px 20px;
+	justify-content: center;
+}
+*/
+
+.akatukigata {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(4, 109px);
+	grid-template-rows: repeat(1, 150px);
+	justify-content: center;
+}
+
+.fotter {
+	margin-top: 15px;
+	height: 30px;
+	padding-top: 15px;
+	border-top: 4px dotted #58f8f5;
+	text-align: center;
+}
+
+@media (max-width:570px) {
+	.fubukigata {
+		display: grid;
+		grid-gap: 3px;
+		grid-template-columns: repeat(5, 72px);
+		grid-template-rows: 100px 20px 100px 20px;
+		justify-content: center;
+	}
+	.akatukigata {
+		display: grid;
+		grid-gap: 5px;
+		grid-template-columns: repeat(4, 72px);
+		grid-template-rows: repeat(1, 100px);
+		justify-content: center;
+	}
+	.name {
+		font-size: 0.75em;
+		font-weight: bold;
+	}
+}
